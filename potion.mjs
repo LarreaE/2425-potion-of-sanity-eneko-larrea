@@ -1,5 +1,3 @@
-import FailedPotion from "./failedPotion.mjs";
-import PotionOfSanity from "./potionOfSanity.mjs";
 
 
 class Potion {
@@ -25,5 +23,21 @@ class Potion {
         return new PotionOfSanity();
     }
 }
+
+class FailedPotion extends Potion {
+    constructor()
+    {
+        super("Failed Potion",0,0,0);
+    }
+}
+
+
+class PotionOfSanity extends Potion {
+    constructor()
+    {
+        super("Potion of Sanity",1000,1,50);
+    }
+}
+
 
 export default Potion

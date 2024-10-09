@@ -27,10 +27,10 @@ class Ingredient {
     findCommonEffects(otherIngredient)
     {
         return this.effects.filter(effect => otherIngredient.hasEffect(effect));
-    }
+    }   
 
     hasEffect(effect) {
-        return this.effects.name.some(candidate => effect.name === candidate.name);
+                return this.effects.some(candidate => effect.name === candidate.name);
     }
 }
 
