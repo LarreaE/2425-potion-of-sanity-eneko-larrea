@@ -14,12 +14,15 @@ const execute = async () => {
         const potion1 = cauldron.createPotion('Bear Claws','Bee');
         const potion2 = cauldron.createPotion("Chicken's Egg",'Chaurus Eggs');
         const potion3 = cauldron.createPotion('Chaurus Eggs','Bleeding Crown');
+        const potion5 = cauldron.createPotion('Wheat','Abecean Longfin');
         const potion4 = cauldron.createPotion('Nightshade','Ectoplasm');
 
         showPotion(potion1)
         showPotion(potion2)
         showPotion(potion3)
         showPotion(potion4)
+        showPotion(potion5)
+
 
 
 
