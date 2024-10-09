@@ -1,3 +1,5 @@
+import FailedPotion from "./failedPotion.mjs";
+import PotionOfSanity from "./potionOfSanity.mjs";
 
 
 class Potion {
@@ -16,11 +18,11 @@ class Potion {
     }
 
     static failed(){
-        return new failedPotion();
+        return new FailedPotion();
     }
 
     static sanity(){
-        return new sanityPotion();
+        return new PotionOfSanity();
     }
 }
 
