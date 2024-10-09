@@ -1,3 +1,4 @@
+import Cauldron from "./cauldron.mjs";
 import Ingredients from "./ingredients.mjs";
 import { getData } from "./service.mjs";
 
@@ -7,16 +8,19 @@ const execute = async () => {
 
         const ingredients = Ingredients.load(data)
 
-        console.log(ingredients);
-
-        for (const key in ingredients) {
-
-            console.log(ingredients[key].effects);
-        }
+        const cauldron = new Cauldron(ingredients);
         
     } catch (error) {
         console.log(error);
     }
 }
 
+const showIngredients = async (ingredients) => {
+
+    for (const key in ingredients.ingredients) {
+        console.log(ingredients.ingredients[key].name);
+        console.log(ingredients.ingredients[key].effects);
+    }
+}
 execute();
+
